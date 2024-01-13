@@ -23,7 +23,7 @@ class Fruit(models.Model):
         ],
     )
 
-    Image_url = models.URLField()
+    image_url = models.URLField()
 
     description = models.TextField()
 

@@ -23,5 +23,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('fruits/', include('fruitipediaApp.fruits.urls')),
 
-    path('create-category/', views.create_category, name='create category'),
+    path('categories/create/', views.create_category, name='create category'),
 ]
