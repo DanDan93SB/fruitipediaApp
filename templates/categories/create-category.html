@@ -8,7 +8,7 @@
             <form class="create-form" method="POST" action="{% url 'create category' %}">
                 {% csrf_token %}
 
-                {{ form }}
+                {{ form.as_div }}
 
                 <button type="submit">Add Category</button>
             </form>

@@ -16,7 +16,7 @@ def dashboard(request):
         'fruits': fruits
     }
 
-    return render(request, 'common/dashboard.html')
+    return render(request, 'common/dashboard.html', context)
 
 
 def create_fruit(request):
@@ -65,7 +65,7 @@ def edit_fruit(request, fruit_id):
         'fruit': fruit,
     }
 
-    return render(request, 'fruits/edit-fruit.html')
+    return render(request, 'fruits/edit-fruit.html', context)
 
 
 def delete_fruit(request, fruit_id):
